@@ -1,0 +1,307 @@
+
+/* Header container */
+.app__container__header-box{
+  height: 4rem;
+  background-color:#FFFFFF ;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.link{
+  text-decoration: none;
+  color: black;
+}
+.app__container__header{
+  width:100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 10rem;
+  background-color:#FFFFFF ;
+}
+
+.app__container__header__nav{
+  height: 100%;
+  padding: .5rem 1.8rem;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+}
+
+.app__container__header__nav-left{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  /* border: 1px solid green; */
+  align-items: center;
+}
+
+.logo-img{
+  width: 90%;
+  
+}
+
+.logo-img img{
+  
+}
+
+.search-box{
+  display: flex;
+  grid-auto-flow: row;
+  /* border: 1px solid red; */
+  background-color: var(--primary-color);
+  height: 2.6rem;
+  border-radius: .5rem;
+  margin:0 1.2rem;
+}
+
+.search-button{
+ /* border: 1px solid green; */
+ display: flex;
+ align-items: center;
+ 
+}
+
+.search-button-icon{
+  width: 2.8rem;
+  
+}
+
+.input-box{
+  width: 100%;
+  background-color: var(--primary-color);
+  /* height: 3rem; */
+  border-radius: 1rem;
+  
+}
+
+.input-box input{
+  width: 100%;
+  height:100% ;
+  background-color: var(--primary-color);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.app__container__header__nav-right{
+  display: grid;
+  height: 3rem;
+  grid-auto-flow: column;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 1rem;
+  /* border: 2px solid red; */
+}
+
+.login-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  cursor: pointer;
+  /* border: 1px solid red; */
+
+}
+
+.login-popup{
+  display: none;
+  /* display: block;
+  position: absolute;
+  top: 2rem;
+  left: -4.2rem;
+  padding: 1rem; */
+ 
+}
+
+.login-box:hover .login-popup{
+  display: block;
+  position: absolute;
+  top: 1.2rem;
+  left: -4rem;
+  padding: 2rem 0;
+  z-index: 5;
+  
+  /* border: 1px solid green; */
+}
+
+.login-icon{
+  width: 1.5rem;
+  height: 100%;
+
+}
+
+.login-icon img{
+   
+}
+
+.login-popup-signup{
+  display: flex;
+  justify-content: space-between;
+  width: 16rem;
+  height: 2rem;
+  padding: .5rem 1.5rem;
+  border-bottom: 1px solid rgba(185, 182, 182, 0.734);
+  background-color: #FFFFFF;
+  margin-left: 3rem;
+  border-radius: .2rem;
+  box-shadow: 1px 1px 1px 1px rgb(244, 241, 241);
+  /* margin-bottom: .3rem; */
+}
+
+.search_item_by_name_container{
+  background-color: #FFFFFF;
+  display: flex;
+  /* align-items: center; */
+  height: 2rem;
+  width: 10rem;
+  padding: .5rem;
+  cursor: pointer;
+  /* border: 1px solid green; */
+}
+
+.search_item_by_name_container_img{
+  width: 1.4rem;
+  /* border: 1px solid red; */
+  /* padding: 1rem; */
+  /* height: 100%; */
+  img{
+    width: 1.5rem;
+    border-radius: .1rem;
+  }
+}
+
+.search_item_by_name_container_img + div{
+  /* display: flex; */
+ width: 100%;
+ height: 100%;
+  /* border: 1px solid blue; */
+  padding: 0 .5rem;
+  /* margin-bottom: .3rem; */
+
+font-size: .4rem;
+font-weight: 500;
+span +p{
+  font-size: .45rem;
+  font-weight: 600;
+  margin: 0;
+}
+}
+
+#pro_name{
+  font-size: .4rem;
+  font-family: Verdana, Geneva, Tahoma ;
+  font-weight: 550;
+}
+
+@media (max-width: 1024px) {
+  .app__container__header {
+    padding: 0 4rem;
+  }
+
+  .app__container__header__nav {
+    grid-template-columns: 2fr 1fr; /* Slightly smaller split */
+  }
+
+  .logo-img {
+    width: 80%; 
+  }
+
+  .search-box {
+    margin: 0 1rem;
+  }
+
+  .input-box input {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .app__container__header__nav-right {
+    font-size: 0.9rem;
+  }
+
+  .login-popup {
+    left: -3rem; /* Adjust the position of the login popup */
+  }
+}
+
+/* For small screens (e.g., mobile phones) */
+@media (max-width: 768px) {
+  .app__container__header {
+    padding: 0 2rem; /* Further reduced padding for mobile */
+  }
+
+  .app__container__header__nav {
+    grid-template-columns: 1fr; /* Stacking the navigation items vertically */
+    text-align: center; /* Center align content */
+  }
+
+  .app__container__header__nav-left {
+    grid-template-columns: 1fr; /* Make the left side stack vertically */
+  }
+
+  .logo-img {
+    width: 70%; /* Further adjust logo size */
+    margin-bottom: 1rem; /* Add margin at the bottom to separate from search */
+  }
+
+  .search-box {
+    width: 100%; /* Ensure the search box takes full width */
+    margin: 0.5rem 0; /* Adjust margin for mobile */
+  }
+
+  .input-box input {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .app__container__header__nav-right {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
+
+  .login-popup {
+    left: -3rem; /* Adjust position for smaller screens */
+  }
+}
+
+
+
+
+@media (max-width: 480px) {
+  .app__container__header {
+    padding: 0 1rem; 
+  }
+
+  .app__container__header__nav {
+    grid-template-columns: 1fr; 
+    padding: 0.5rem 0; 
+  }
+
+  .logo-img {
+    width: 60%; 
+    margin-bottom: 1rem;
+  }
+
+  .search-box {
+    width: 100%; 
+    margin: 0.5rem 0;
+  }
+
+  .input-box input {
+    font-size: 0.9rem;
+  }
+
+  .app__container__header__nav-right {
+    font-size: 0.8rem; 
+    display: none;
+  }
+
+  .login-box {
+    gap: 0.2rem; 
+  }
+
+  .login-popup {
+    left: -2rem; 
+  }
+}
+
+

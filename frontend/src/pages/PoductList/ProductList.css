@@ -1,0 +1,121 @@
+.product_list_container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 1rem;
+  width: 92.7%;
+  margin: 0 auto;
+}
+
+.product_list_container__left {
+  /* background-color: green; */
+  height: 100%;
+  background-color: #ffffff;
+  /* position: fixed; */
+}
+
+.filter_box {
+  border-bottom: 1px solid rgb(192, 190, 190, 0.3);
+  padding: 1rem 1rem;
+  /* width: 18vw; */
+}
+
+.filter_heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_list_container__right {
+  /* background-color: red; */
+  /* width: 74vw; */
+  /* margin-left: 20rem; */
+  /* border: 1px solid blue; */
+  background-color: #ffffff;
+}
+
+.class_pad {
+  padding: 0.4rem 1rem;
+}
+
+.product_list__header {
+  padding: 1rem 1rem;
+  color: gray;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+.product_list_show {
+  margin: 1rem 0;
+}
+
+.product_list_show__sort {
+  display: flex;
+  font-weight: 400;
+  gap: 1rem;
+  button {
+    border: none;
+    background-color: transparent;
+  }
+  border-bottom: 1px solid rgba(195, 193, 193, 0.3);
+}
+
+.product_list_show__main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter_by_brand {
+  input {
+    margin-right: 0.5rem;
+  }
+}
+
+.filter_by_price {
+  form {
+    margin-left: .7rem;
+    display: flex;
+    justify-content: center;
+  }
+  input {
+    width: 25%;
+    height: 1.5rem;
+    margin-right: 0.2rem;
+    /* margin-left: .5rem; */
+  }
+  label{
+    margin-right: .2rem;
+    margin-left: .3rem;
+  }
+}
+.btn-price-sort {
+  margin-top: .1rem;
+  button {
+    /* height: 100%; */
+    padding: 0.2rem;
+    margin-top: -1rem;
+    /* width: 11.5rem; */
+    /* margin-left: 2rem; */
+  }
+}
+
+.sort_low_high_price{
+  cursor: pointer;
+  background-color:rgba(235, 233, 233, 0.425);
+  padding: 0rem .5rem;
+  border-radius: .2rem;
+}
+
+.sort_low_high_price:hover{
+  background-color: rgba(215, 212, 212, 0.425);
+  
+}
+
+.clear-but{
+  margin: 0;
+  padding: .3rem .3rem;
+  font-size: .8rem;
+  border-radius: 2px;
+  color: rgb(78, 78, 232);
+  background-color: transparent;
+  font-weight: 600;
+}

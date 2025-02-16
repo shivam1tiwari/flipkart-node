@@ -1,0 +1,411 @@
+.profile__container{
+  display: grid;
+  grid-template-columns: 1.5fr 5fr;
+  width: 70%;
+  height: 100%;
+  margin: 1rem auto;
+
+  span{
+    color: #2874F0;
+    margin-left: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  p{
+    /* font-size: 1.2rem; */
+    font-weight: 600;
+  }
+}
+.profile_information{
+  box-shadow: none;
+}
+
+.profile__container__left{
+  width: 100%;
+}
+
+.profile_name{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  input{
+    width: 100%;
+    height: 3rem;
+    border: unset;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0 1rem;
+  }
+  button{
+    padding: .9rem;
+    width: 25%;
+    margin: 0;
+    background-color: #2874F0;
+    font-weight: 600;
+  }
+}
+
+.profile_head{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 4rem;
+  padding: 1rem;
+  font-size: .6rem;
+  background-color: white;
+  /* border: 1px solid black; */
+}
+
+.profile_img{
+  width: 24%;
+}
+
+.profile_order{
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: white;
+  cursor: pointer;
+
+  h4{
+    color: gray;
+  }
+  p{
+    color: black;
+    font-size: .7rem;
+    ;
+  }
+  
+}
+
+
+
+.common-div{
+  padding: 1rem;
+  margin: 1rem 0;
+  
+}
+
+
+.profile__container__right{
+  padding: 1rem 3rem;
+  margin: 0 1rem;
+  height: 100%;
+  background-color: white;
+}
+
+.personal-info_head{
+  margin-left: 1rem;
+  span{
+    font-size: .9rem;
+    margin-left: .5rem;
+  }
+}
+
+.profile_faq h4,h5 ,p{
+   margin: 1rem;
+}
+
+.profile_information{
+  input{
+    font-size: 1rem;
+  }
+  
+}
+.manage__addresses{
+  width: 100%;
+  p{
+    width: 100%;
+    padding: 0%;
+    
+  }
+
+}
+
+.add_addresses{
+  p{
+    margin:0%;
+    color: #2874F0;
+  }
+}
+.add_address__box{
+  cursor: pointer;
+}
+
+#add_address__box-font{
+ font-size: .9rem;
+}
+
+.adrs_style{
+  /* height: 3rem; */
+  
+  width:100%;
+  border: 1px solid rgb(235, 234, 234);
+  margin-top: 1rem;
+}
+
+.add_address__box{
+
+  p{
+    
+    color: #2874F0;
+    font-size: 1.2rem;
+  
+  }
+}
+
+.old_address_box{
+  height: 8rem;
+}
+
+.profile_faq button{
+  margin: 1rem;
+}
+
+.profile_email{
+  padding: .5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  input{
+    width: 100%;
+    height: 3rem;
+    border: unset;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 1rem;
+  }
+  p{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  span{
+    font-size: .9rem;
+    margin-left: .5rem;
+  }
+}
+
+.email_1{
+  display: flex;
+  width: 50%;
+  button{
+    margin: 0;
+    padding: 1rem;
+    width: 25%;
+    margin-left: 2rem;
+    background-color: #2874F0;
+    font-weight:600 ;
+  }
+  
+}
+
+.profile_mobile{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  p{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+   
+  }
+  input{
+    height: 3rem;
+    width: 100%;
+    border: unset;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 1rem;
+  }
+  span{
+    font-size: .9rem;
+    margin-left: .5rem;
+  }
+}
+
+.profile_gender{
+  margin: 0;
+  padding: 0 0rem;
+  input{
+    margin-right: .5rem;
+    border: unset;
+
+  }
+  label{
+    margin-left: 1rem;
+  }
+}
+
+.visible{
+  visibility: hidden;
+}
+
+.border_class{
+  display: flex;
+  border: 1px solid lightgray;
+  width: 80%;
+}
+
+.profile_order p:hover{
+  color: #2874F0;
+}
+
+.new_address_form-box{
+  position: relative;
+  top: -3rem;
+  padding:.5rem;
+  background-color: #F5FAFF;
+  p{
+    font-size: .9rem;
+    font-weight: 600;
+    margin-left: 1.5rem;
+  }
+  
+}
+
+.ad-input{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0rem 1.5rem;
+
+  input{
+    height: 3rem;
+    width: 100%;
+    padding: 1rem;
+    font-weight: 500;
+    /* outline: none; */
+    font-family: Verdana, Geneva, Tahoma ;
+    border: 1px solid rgb(219, 217, 217);
+   
+  }
+
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#ad-address{
+  /* height:6rem; */
+  padding: 1rem 1rem;
+  width: 100%;
+  resize: none;
+  font-size: .9rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  font-family: Verdana, Geneva, Tahoma ;
+  /* padding:0; */
+  border: 1px solid rgb(228, 227, 227);
+  /* outline:1px solid #2874F0; */
+ 
+}
+
+.old_address_box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: .2rem .1rem;
+  height: 100%;
+}
+
+.address_img-box{
+  width: 3%;
+  cursor: pointer;
+  
+}
+
+.address-delete{
+  display: none;
+  position: relative;
+  width: 3rem;
+  top:-1rem;
+  right:3rem;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgb(247, 246, 246),-1px -1px 1px 1px rgb(238, 237, 237);
+  p{
+    font-size: .8rem;
+    margin: .2rem;
+    padding: .1rem;
+    border-radius: .1rem;
+    text-align: center;
+    background-color: white;
+
+    font-weight: 500;
+  }
+}
+.address-delete{
+  p:hover{
+    color: #2874F0;
+    cursor: pointer;
+  }
+}
+
+.address_img-box:hover .address-delete{
+ display: block;
+  
+}
+
+#ad_sub_but{
+  /* padding: 0;
+  margin: 0; */
+  width: 42%;
+  margin-left: 1.6rem;
+  margin-top: 2rem;
+  background-color: #2874F0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+#ad_canc_but{
+  width: 30%;
+  background-color: transparent;
+  color: #2874F0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.middle{
+  position: relative;
+  top: .6rem;
+  left: .5rem;
+  /* padding:1rem; */
+  /* color: rgb(101, 99, 99); */
+}
+
+#errors{
+  position: absolute;
+  top: 15.5rem;
+  left: 51rem;
+  font-size: .7rem;
+  color: red;
+}
+#errors1{
+  position: absolute;
+  /* left: 1rem; */
+  top: 19.5rem;
+  /* right: -27.5rem; */
+  font-size: .7rem;
+  padding-left: 1rem;
+  color: red;
+}
+
+.editable{
+  position:relative;
+  width: 100%;
+  left: -.5rem;
+  top: -1.2rem;
+  opacity: 1;
+  /* background-color: #F5FAFF; */
+}
+#form-ad-address{
+  font-size: .9rem;
+  margin-left: 1.5rem;
+}

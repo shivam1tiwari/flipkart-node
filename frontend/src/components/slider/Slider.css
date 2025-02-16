@@ -1,0 +1,133 @@
+.slider__container {
+  width: 1600px;
+
+  height: 18rem;
+  margin: 0.5rem auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffff;
+}
+
+.slider_box {
+  display: flex;
+
+  width: 100%;
+}
+.slides {
+  width: 100%;
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slider_button {
+  position: absolute;
+  font-size: 2rem;
+  width: 2rem;
+}
+
+.slider_button-left {
+  position: absolute;
+  top: 7rem;
+  left: -1.4rem;
+  padding: 0.8rem 2.3rem;
+  background-color: #ffff;
+  transform: rotate(90deg);
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.slider_button-right {
+  position: absolute;
+  top: 7rem;
+  right: -1.4rem;
+  padding: 0.8rem 2.3rem;
+  background-color: #ffff;
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+progress {
+  width: 1.3rem; /* Adjust width as needed */
+  height: 100%; /* Adjust height as needed */
+  background-color: rgb(
+    219,
+    216,
+    216
+  ); /* Background color for the progress bar */
+  border-radius: 10px; /* Optional: to add rounded corners */
+  border: none; /* Optional: remove any default border */
+}
+
+/* Style the inner filled portion of the progress bar */
+progress::-webkit-progress-bar {
+  background-color: rgb(219, 216, 216); /* Color of the empty progress bar */
+}
+
+progress::-webkit-progress-value {
+  background-color: rgb(
+    55,
+    54,
+    54
+  ); /* Color of the filled portion of the progress bar */
+}
+
+.slide-timer {
+  width: 1.5rem;
+  height: 100%;
+  margin-top: -1rem;
+}
+.timer-slide {
+  display: flex;
+  width: 0.5rem;
+  margin-left: 1rem;
+  height: 3px;
+  background-color: rgb(219, 216, 216);
+  border-radius: 4px;
+}
+
+.timer-slide1 {
+  display: flex;
+  /* width: .5rem ; */
+  height: 3px;
+  background-color: rgba(246, 244, 244, 0.573);
+  border-radius: 4px;
+}
+
+@media (max-width: 480px) {
+  .slider__container {
+    width: 100%;
+    margin-bottom: -17rem;
+  }
+
+  .slider_button-left,
+  .slider_button-right {
+    font-size: 1.2rem; /* Smaller button size */
+    padding: 0.5rem 1.5rem;
+  }
+  .slider_button-left {
+    display: none;
+  }
+
+  .slider_button-right {
+    display: none;
+  }
+
+  progress {
+    width: 0.9rem; /* Even smaller progress bar */
+  }
+
+  .slide-timer {
+    width: 1rem;
+  }
+
+  .timer-slide {
+    width: 0.3rem;
+  }
+
+  .timer-slide1 {
+    width: 0.3rem;
+  }
+}

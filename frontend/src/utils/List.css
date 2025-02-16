@@ -1,0 +1,42 @@
+
+.ul-list{
+  padding: 0;
+}
+
+.list__container{
+  width: 16rem;
+  background-color:#FFFFFF;
+  margin-left: 3rem;
+  padding: .1rem .1rem;
+  border-radius: .5rem;
+  box-shadow: 1px 1px 1px 1px rgb(244, 241, 241);
+}
+
+.list-item{
+  /* margin: .5rem auto; */
+  /* padding: .5rem 1rem; */
+  border-radius: .2rem;
+  
+  
+}
+
+.list-content{
+  display: flex;
+  padding: .5rem 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+
+.list-img{
+  margin-top: .2rem;
+  margin-right: .3rem;
+}
+
+.list-item img{
+  width: 1.2rem;
+}
+
+.list-item :hover{
+  background-color: rgb(249, 248, 248);
+}

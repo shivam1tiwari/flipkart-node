@@ -1,0 +1,126 @@
+.contact__container{
+  display: flex;
+  width: 100vh;
+  height: 55vh;
+  margin: 1rem auto;
+  
+}
+
+.contact__container_left{
+  background-color: #2874F0;
+  color: #ffff;
+  padding: 3rem 2rem;
+  width: 37%;
+  p{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+}
+
+.contact__content{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+
+.contact__container_right{
+  padding: 2.5rem 3rem;
+  background-color: #FFFFFF;
+}
+
+.right__content{
+  display: flex;
+  flex-direction: column;
+  color: gray;
+}
+
+.common_input{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(182, 180, 180,.5);
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.gender_box{
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+
+.gender_box {
+  display: flex;
+  gap: 2rem; 
+  justify-content: flex-start; 
+  margin-top: 1rem;
+}
+
+
+.gender {
+  display: flex;
+  align-items: center; 
+  gap: 0.5rem; 
+}
+
+
+.gender input[type="radio"] {
+  margin-top: 0; 
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer; 
+}
+
+
+.gender label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #989696; 
+  cursor: pointer; 
+}
+ 
+
+
+form{
+  p{
+    font-size: .8rem;
+    font-weight: 500;
+  }
+
+  span{
+    color: #2874F0;
+    margin:0 .1rem;
+  }
+}
+
+.button{
+  text-align: center;
+  margin: 1.5rem auto;
+  height: 3rem;
+ 
+}
+
+#contact_button{
+  width: 100%;
+  height: 100%;
+  background-color: #FB641B;
+  border: 0px solid transparent;
+  border-radius: .2rem;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.contact{
+  text-align: center;
+  color: #2874F0;
+  font-weight: 600;
+} 
+
+

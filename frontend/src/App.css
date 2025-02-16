@@ -1,0 +1,25 @@
+*,
+::before,
+::after{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html{
+  margin: 0;
+  background-color: #F1F2F4;
+}
+
+:root{
+  --primary-color:#F0F5FF;
+}
+
+ul{
+  list-style-type: none;
+}
+
+img{
+  width: 100%;
+}
+

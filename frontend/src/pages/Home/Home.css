@@ -1,0 +1,30 @@
+
+.top_product_home{
+  position:relative;
+}
+
+.top_product_home_but-next{
+ position:absolute;
+ right:11.3rem;
+ top:10rem;
+ background-color: white;
+ transform:rotate(-90deg);
+ height:2rem;
+}
+
+.top_product_home_but-prev{
+  position:absolute;
+  left:11.3rem;
+  top:10rem;
+  background-color: white;
+  transform:rotate(90deg);
+  height:2rem;
+ }
+
+ .top_product_home_but-next:hover{
+  background-color: rgb(211, 209, 209);
+ }
+
+ .top_product_home_but-prev:hover{
+  background-color: rgb(211, 209, 209);
+ }
